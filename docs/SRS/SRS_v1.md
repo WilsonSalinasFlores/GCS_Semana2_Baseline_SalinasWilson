@@ -5,6 +5,8 @@
 **Fecha:** 12 de enero de 2026  
 **Tecnologías:** .NET / Entity Framework Core / SQL Server
 
+**Estado:** Línea Base Controlada  
+**Última Actualización:** 13 de enero de 2026
 ---
 
 ## 1. Introducción
@@ -23,19 +25,10 @@ Este documento define los requisitos para una Web API encargada de la gestión d
 
 | ID | Requisito | Descripción |
 | :--- | :--- | :--- |
-| **RNF-01** | **Autenticación y Seguridad** | El acceso a los controladores de la API debe estar restringido mediante **JWT (JSON Web Tokens)** y políticas de CORS. |
-| **RNF-02** | **Integridad de Datos** | Se deben implementar transacciones de base de datos para asegurar que, si un registro de movimiento de stock falla, el balance del producto no se altere. |
-
-## 4. Modelado de Datos (Diagrama de Entidad-Relación)
-
-A continuación, se presenta la estructura sugerida para las tablas que se generarán mediante **Entity Framework Core (Code First)**.
+| **RNF-05** | **Autenticación y Seguridad** | El acceso a los controladores de la API debe estar restringido mediante **JWT (JSON Web Tokens)** y políticas de CORS. |
+| **RNF-06** | **Integridad de Datos** | Se deben implementar transacciones de base de datos para asegurar que, si un registro de movimiento de stock falla, el balance del producto no se altere. |
+| **RNF-07**| **Bitácora de Auditoría (Audit Log)** | **El sistema debe registrar automáticamente quién, cuándo y qué cambio se realizó en los datos maestros de productos y niveles de stock para asegurar la trazabilidad.** |
 
 
-
----
-
-## 5. Diseño Técnico
-- **Arquitectura:** MVC (Model-View-Controller) / Web API.
-- **ORM:** Entity Framework Core.
-- **Base de Datos:** SQL Server.
-- **Validaciones:** Uso de `DataAnnotation` en los modelos para asegurar la calidad de los datos de entrada.
+## 4. Trazabilidad de Requisitos
+El nuevo requisito **RNF-07** es fundamental para el cumplimiento de normativas de control interno, asegurando que cada ajuste manual al inventario tenga un responsable identificado en la base de datos.
