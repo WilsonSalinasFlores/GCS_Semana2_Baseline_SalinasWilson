@@ -1,0 +1,29 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=.;Database=InventarioDB;User Id=sa;Password=sa;TrustServerCertificate=True;"
+  },
+  "JwtSettings": {
+    "Key": "12345678901234567890123",
+    "Issuer": "InventoryControlAPI",
+    "Audience": "InventoryClientApp",
+    "DurationInMinutes": 480
+  },
+  "InventorySettings": {
+    "DefaultTax": 0.15,
+    "LowStockThreshold": 5,
+    "EnableAutomaticStockAlerts": true
+  },
+  "BaselineInfo": {
+    "Version": "1.0.4",
+    "Environment": "Development",
+    "LastAuditDate": "2026-01-12",
+    "Reviewer": "Estudiante_7mo_Semestre"
+  }
+}
