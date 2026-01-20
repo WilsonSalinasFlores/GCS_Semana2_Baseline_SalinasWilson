@@ -1,9 +1,7 @@
 # Plan de Gestión de Configuración (CM_PLAN)
 ## Proyecto: API de Control de Inventario
 
----
-
-## A2 · Definición de Elementos de Configuración (EC)
+## Definición de Elementos de Configuración (EC)
 
 A continuación esta el detalle de los EC que forman parte de la línea base del proyecto. Estos elementos deben estar bajo control de versiones y cualquier cambio debe ser registrado.
 

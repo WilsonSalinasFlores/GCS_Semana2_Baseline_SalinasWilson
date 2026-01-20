@@ -1,6 +1,6 @@
 # Ciclo de Desarrollo
 
-## Immpacto por fases
+## Impacto por fases
 
 *"El RNF de búsqueda de productos debe ser $\leq$ 2 segundos"*. El objetivo es demostrar que el cambio sin un control estricto de la configuración incrementa los costos y genera deudas técnicas.
 
